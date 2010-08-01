@@ -246,11 +246,11 @@ a valid response is received.
 
 =item STORE
 
-Here you can choose how we store the authenticated information after a use has successfully 
+Here you can choose how we store the authenticated information after a user has successfully 
 logged in.  We need to store the username so that on the next request we can tell the user
 has already logged in, and we do not have to present them with another login form.  If you
 do not provide the STORE option, then the plugin will look to see if you are using the
-L<CGI::Application::Plugin::Session> module and based on that info use wither the Session
+L<CGI::Application::Plugin::Session> module and based on that info use either the Session
 module, or fall back on the Cookie module.  If the module requires extra parameters, you
 can pass an array reference that contains as the first parameter the name of the module,
 and the rest of the array should contain key value pairs of options for this module.
